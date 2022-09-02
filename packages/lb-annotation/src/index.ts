@@ -14,6 +14,7 @@ import MeasureOperation from './core/toolOperation/measureOperation';
 import { BasicToolOperation } from './core/toolOperation/basicToolOperation';
 import ViewOperation from './core/toolOperation/ViewOperation';
 import PointCloud2dOperation from './core/toolOperation/pointCloud2dOperation';
+import ScribbleTool from './core/toolOperation/ScribbleTool';
 
 // Constant
 import * as cAnnotation from './constant/annotation';
@@ -79,6 +80,7 @@ export {
   AnnotationEngine,
   PointCloud,
   UnitUtils,
+  ScribbleTool,
 };
 
 export * from './newCore';

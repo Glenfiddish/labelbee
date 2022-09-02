@@ -48,6 +48,8 @@ export enum EToolName {
   FolderTag = 'folderTagTool',
   /** 拉框跟踪工具 */
   RectTrack = 'rectTrackTool',
+  /** 涂抹工具 */
+  ScribbleTool = 'scribbleTool',
   /** 人脸106工具 */
   Face = 'faceTool',
   /** 客户端属性工具 */

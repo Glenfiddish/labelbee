@@ -9,6 +9,7 @@ import TagOperation from '../../core/toolOperation/tagOperation';
 import LineToolOperation from '../../core/toolOperation/LineToolOperation';
 import PointOperation from '../../core/toolOperation/pointOperation';
 import TextToolOperation from '../../core/toolOperation/TextToolOperation';
+import ScribbleTool from '@/core/toolOperation/scribbleTool';
 
 type point = {
   id: string;
@@ -114,6 +115,7 @@ export default class CommonToolUtils {
    * @param toolName
    */
   public static getCurrentOperation(toolName: EToolName | ECheckModel | EPointCloudName) {
+    console.log(toolName);
     switch (toolName) {
       case EToolName.Rect:
       case EToolName.RectTrack:
@@ -130,6 +132,8 @@ export default class CommonToolUtils {
         return PointOperation;
       case EToolName.Text:
         return TextToolOperation;
+      case EToolName.ScribbleTool:
+        return ScribbleTool;
       // TODO: 点云实例返回
       case EPointCloudName.PointCloud:
         return {};
